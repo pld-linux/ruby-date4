@@ -1,4 +1,5 @@
 Summary:	Enhanced Date class
+Summary(pl.UTF-8):	Klasa Enhanced Date (rozszerzonej daty)
 Name:		ruby-date4
 Version:	0.1.18
 Release:	1
@@ -18,7 +19,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 date4 is a derivative of date2 that is for some experiments.
 
 Supports timezone handling, provides a new class Delta, and some minor
-changes
+changes.
+
+%description -l pl.UTF-8
+date4 to pochodna date2 przeznaczona do pewnych eksperymentów.
+
+Obsługuje strefy czasowe, udostępnia nową klasę Delta i pewne
+pomniejsze modyfikacje.
 
 %prep
 %setup -q -n date4-%{version}
@@ -53,4 +60,3 @@ rm -rf $RPM_BUILD_ROOT
 %{ruby_rubylibdir}/date4.rb
 %{ruby_rubylibdir}/date4
 %{ruby_rubylibdir}/date4asdate.rb
-#   %{ruby_rubylibdir}/parsedate.rb
